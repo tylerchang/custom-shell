@@ -8,7 +8,7 @@ Only used direct system calls (`syscall()`) instead of wrapper library functions
   - Supports arbitrarily long input commands and dynamically resizes input buffer as needed
   - Utilizes `mmap()` for efficient memory allocation and `munmap()` for deallocation
 ### Process Management
-  - Uses `clone()` system call for process creation, demonstrating Linux-specific process management techniques
+  - Uses `clone()` system call for process creation and command execution which utilizes Linux-specific process management techniques
   - Implements proper child process waiting and resource cleanup
 ### Signal Handling
   - Implements custom signal handling for SIGINT (Ctrl+C)
